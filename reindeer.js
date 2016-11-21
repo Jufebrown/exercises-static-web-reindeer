@@ -3,3 +3,11 @@ var reindeer = ["Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donne
 
 
 var hohohoElement = document.getElementById("coloredReindeer");
+
+
+
+for (var i = 0; i < reindeer.length; i++) {
+	var newParagraph = document.createElement("p");
+	newParagraph.innerText=colors[i] + " " + reindeer[i];
+	hohohoElement.appendChild(newParagraph);
+}
